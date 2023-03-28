@@ -1,0 +1,29 @@
+div{
+    border: 1px solid black;
+}
+
+.logo{
+    width: 150px;
+}
+
+body{
+    padding: 10px;
+}
+
+.menu-superior{
+    text-align: right;
+}
+
+.menu-superior li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+
+.producto{
+    width: 100%;
+}
