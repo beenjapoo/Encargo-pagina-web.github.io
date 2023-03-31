@@ -1,5 +1,38 @@
 
-.minavbar{
-    background-color: red;
-    color:Red;
+*{
+    padding:0;
+    margin:0;
+}
+
+.micontenedor{
+    background-color: orange;
+}
+
+.formregistro{
+    border: solid black 1px;
+    width: 70%;
+    left: 10%;
+}
+
+.formregistro div {
+    display:flex;
+    justify-content: space-between;
+    margin-top:5px;
+}
+.formregistro div input {
+    width: 40%;
+}
+
+.misbtn{
+    
+    display: inline-block;
+    margin-top:15px;
+    position:right;
+
+}
+
+.misbtn button{
+    margin-left: 20px;
+    color: white;
+    background-color: #262A56;
 }
