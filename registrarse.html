@@ -1,79 +1,85 @@
 <!DOCTYPE html>
 <html lang="spa">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetShop</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/registrarse.css">
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary minavbar" >
-            <div class="container-fluid" >
-                <!-- home -->
-              <a class="navbar-brand"href="index.html">PetShop</a>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                <a class="nav-link active" href="index.html">Inicio</a>
-                  <a class="nav-link active" href="registrarse.html">Registrarse</a>
-                  <a class="nav-link active" href="nosotros.html">Nosotros</a>
-                  <a class="nav-link active" href="ingresar.html">Ingresar</a>
-                </div>
-              </div>
-            </div>
-          </nav>
+    <header class="head">
+        <img width="100px"
+            src="https://www.latercera.com/resizer/Mhxk54PhZcX9_vT2pV6vzcbeE1E=/900x600/smart/arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/7CXRP7L6W5F3RGVMAOLGMVIJ5E.png"
+            class="miimg"
+            href="index.html">
+        <nav class="navbar">
+            <ul class="lista">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="ingresar.html">Ingresar</a></li>
+                <li><a href="registrarse.html">Registrarse</a></li>
+            </ul>
+        </nav>
+
     </header>
 
+    <h4 class="title">Registro de cliente</h4>
     <div class="container-fluid col-11 micontenedor">
-        <h3>registro cliente</h3>
         <form action="" class="formregistro">
-            <div>
-                <label for="">rut</label>
-                <input type="text" >
+            <div class="divinfo">
+                <label for="rut">Rut</label>
+                <input class="inprut" id="rut" type="text" placeholder="12.356.789-k">
             </div>
-            <div>
-                <label for="">Nombres</label>
-                <input type="text" >
+            <div class="divinfo">
+                <label for="nombre">Nombres</label>
+                <input id="nombre" type="text" placeholder="nombre">
             </div>
-            <div>
-                <label for="">Apellidos</label>
-                <input type="text" >
+            <div class="divinfo">
+                <label for="apellido">Apellidos</label>
+                <input id="apellido" type="text" placeholder="apellido">
             </div>
-            <div>
-                <label for="">correo</label>
-                <input type="text" >
+            <div class="divinfo">
+                <label for="correo">Correo</label>
+                <input id="correo" type="text" placeholder="ejemp@gmail.com">
             </div>
-            <div>
-                <label for="">direccion</label>
-                <textarea name="" id="" cols="30" rows="3"></textarea>
+            <div class="divinfo">
+                <label for="direccion">Direccion</label>
+                <textarea id="direccion" style="resize: none;outline: none;
+                border: 1px solid black;
+                padding: 5px;" placeholder="direccion" maxlength="100" cols="50" rows="2"></textarea>
             </div>
-            <div>
-                <label for="">Con subscripción</label>
-                
-                <span>
-                    <input type="checkbox">
-                    Deseo subscribirme con un aporte de $3000<br> mensuales y 
-                    obtener un 5% de descuento en mis compras</span>
+            <div class="datacheckbx">
+                <label for="subs">Con subscripcion</label>
+                <input id="id" class="inpCheck" type="checkbox">
             </div>
-            <div>
-                <label for="">contraseña</label>
-                <input type="password" placeholder="">
+            <div class="divinfo">
+                <label for="pass">Contraseña</label>
+                <input id="pass" type="password">
+
             </div>
-            <div>
-                <label for="">repetir contraseña</label>
-                <input type="password" placeholder="">
+            <div class="divinfo">
+                <label for="repPass">Repetir contraseña</label>
+                <input id="repPass" type="password">
             </div>
-            
-            <section class="misbtn">
-                <button class="btn">guardar</button>
-                <button class="btn">limpiar</button>
-            </section>
+
         </form>
+        <div class="imgside">
+            <img width="100px"
+                src="https://storage.googleapis.com/afs-prod/media/media:144be411d6d8450893a5b78c17143f77/2441.jpeg"
+                alt="">
+            <button>examinar</button>
+        </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
 </body>
 </body>
+
 </html>
