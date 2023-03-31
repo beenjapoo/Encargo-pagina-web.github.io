@@ -1,0 +1,16 @@
+.minavbar{
+    background-color: red;
+    color:Red;
+}
+
+h4{
+    display: block;
+    float: left;
+    width: 50%;
+}  
+p {
+    display: block;
+    align-content: left;
+    width: 60%;
+}
+  

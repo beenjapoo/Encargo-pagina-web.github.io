@@ -1,0 +1,11 @@
+.minavbar{
+    background-color: red;
+    color:Red;
+}
+body{
+    padding: 10px;
+}
+
+a, a:visited{
+    text-decoration: none;
+}
