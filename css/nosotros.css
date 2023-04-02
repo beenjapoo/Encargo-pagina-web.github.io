@@ -16,3 +16,10 @@ p {
 body {
     background-color: rgb(72, 162, 179);
 }
+.banner {
+    background-image: url("tiendasasasa.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    text-align: center;
+}
