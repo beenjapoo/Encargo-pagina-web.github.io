@@ -2,7 +2,7 @@
 
 
 Integrantes
-Benjamin Araya
+Benjamin Araya Serrano
 David Luengo
-Cristian Perez
-Roberto Vergara
+Cristian Perez Vega
+Roberto Vergara Carrasco

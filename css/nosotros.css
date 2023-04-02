@@ -13,4 +13,6 @@ p {
     align-content: left;
     width: 60%;
 }
-  
+body {
+    background-color: rgb(72, 162, 179);
+}
