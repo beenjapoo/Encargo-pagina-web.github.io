@@ -32,12 +32,28 @@
         <h2>Ingreso de Productos</h2>
         <form>
           <div class="mb-3">
+            <label for="idProducto" class="form-label">Id del Producto:</label>
+            <input type="text" class="form-control" id="idProducto">
+          </div>
+		  <div class="mb-3">
             <label for="nombreProducto" class="form-label">Nombre del Producto:</label>
             <input type="text" class="form-control" id="nombreProducto">
           </div>
           <div class="mb-3">
-            <label for="cantidadProducto" class="form-label">Cantidad:</label>
-            <input type="number" class="form-control" id="cantidadProducto">
+            <label for="descripcionProducto" class="form-label">Descripción:</label>
+            <input type="textarea" class="form-control" id="descripcionProducto">
+          </div>
+		  <div class="mb-3">
+            <label for="precioProducto" class="form-label">Precio:</label>
+            <input type="number" class="form-control" id="precioProducto" placeholder="$8.000">
+          </div>
+		  <div class="mb-3">
+            <label for="descuentoSubscriptor" class="form-label">Descuento Subscriptor:</label>
+            <input type="number" class="form-control" id="descuentoSubscriptor" placeholder="5%">
+          </div>
+		  <div class="mb-3">
+            <label for="descuentoPorOferta" class="form-label">Descuento Por Oferta:</label>
+            <input type="number" class="form-control" id="descuentoPorOferta" placeholder="5%">
           </div>
           <button type="submit" class="btn btn-primary">Ingresar Producto</button>
         </form>
@@ -47,12 +63,8 @@
         <h2>Retiro de Productos</h2>
         <form>
           <div class="mb-3">
-            <label for="nombreProductoRetiro" class="form-label">Nombre del Producto:</label>
-            <input type="text" class="form-control" id="nombreProductoRetiro">
-          </div>
-          <div class="mb-3">
-            <label for="cantidadProductoRetiro" class="form-label">Cantidad:</label>
-            <input type="number" class="form-control" id="cantidadProductoRetiro">
+            <label for="idProductoRetiro" class="form-label">Id del Producto:</label>
+            <input type="number" class="form-control" id="idProductoRetiro">
           </div>
           <button type="submit" class="btn btn-danger">Retirar Producto</button>
         </form>
@@ -65,22 +77,42 @@
     <table class="table table-striped">
       <thead>
         <tr>
-          <th scope="col">Nombre del Producto</th>
-          <th scope="col">Cantidad</th>
+		  <th scope="col">ID</th>
+          <th scope="col">Categoria</th>
+		  <th scope="col">Nombre</th>
+		  <th scope="col">Descripción</th>
+          <th scope="col">Precio</th>
+		  <th scope="col">% Desc Subscriptor</th>
+		  <th scope="col">% Desc Oferta</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Producto 1</td>
-          <td>10</td>
+          <td>27</td>
+          <td>Perros</td>
+		  <td>Saco Alimento Royan Canin</td>
+		  <td>Saco Royan Canin de 3 Kilos</td>
+		  <td>$8.000</td>
+		  <td>5%</td>
+		  <td>2%</td>
         </tr>
         <tr>
-          <td>Producto 2</td>
-          <td>5</td>
+          <td>28</td>
+          <td>Gato</td>
+		  <td>Saco alimento Don Cuchito</td>
+		  <td>Saco Don Cuchito de 1 Kilo</td>
+		  <td>$2.000</td>
+		  <td>5%</td>
+		  <td>2%</td>
         </tr>
         <tr>
-          <td>Producto 3</td>
-          <td>3</td>
+          <td>29</td>
+          <td>Perros</td>
+		  <td>Saco alimento Royan Canin</td>
+		  <td>Saco Royan Canin de 5 Kilos</td>
+		  <td>$10.000</td>
+		  <td>5%</td>
+		  <td>3%</td>
         </tr>
       </tbody>
     </table>
