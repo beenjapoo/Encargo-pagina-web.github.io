@@ -1,64 +1,111 @@
-<!DOCTYPE html>
-<html lang="spa">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PetShop</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/registrarse.css">
-</head>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">PetShop</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+					<a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+					<a class="nav-link active" aria-current="page" href="ingresar.html">Ingresar</a>
+					<a class="nav-link active" aria-current="page" href="registrarse.html">Registrarse</a>
+				</div>
+			</div>
+		</div>
+		</nav>
 
-<body>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" >
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">
-                 PetShop
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                  <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
-                  <a class="nav-link active" aria-current="page" href="ingresar.html">Ingresar</a>
-                  <a class="nav-link active" aria-current="page" href="registrarse.html">Registrarse</a>
-                </div>
-              </div>
-            </div>
-            </nav>
+    <h1>Registro de cliente</h1>
+    <br>
 
 
-    <main>
-        <div class="container">
-            <section class="misection">
-                <h1>Registro de cliente</h1>
-                <br>
-                <form action="" class="row g-3 needs-validation">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col">
+    <form class="row g-3 needs-validation" novalidate>
+        <div class="container-fluid">
+            
+            <div class="row">
+                
+                <div class="col-sm-12 col-md-6" id="datos">
 
-                            </div>
-
-                            <div class="col">
-                                
-                            </div>
+                    
+                      <div class="mb-3">
+                        <label for="rut" class="form-label">Rut</label>
+                        <input type="text" placeholder="Ej: 1111111-k" class="form-control" id="rut" aria-describedby="emailHelp" required>
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        <div class="invalid-feedback">
+                          error
                         </div>
-                    </div>
-                </form>
-            </section>
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="nombres" class="form-label">Nombres</label>
+                        <input type="text" placeholder="Nombre Completo" class="form-control" id="nombres" aria-describedby="emailHelp">
+                      </div>
+                      
+                      <div class="mb-3">
+                        <label for="apellido" class="form-label">Apellidos</label>
+                        <input type="text" placeholder="Apellido Completo" class="form-control" id="apellido" aria-describedby="emailHelp">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electronico</label>
+                        <input type="email" placeholder="ejemplo@ejemplo.cl" class="form-control" id="email" aria-describedby="emailHelp">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="direccion" class="form-label">Dirección</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+
+                      <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Deseo suscribirme con un aporte de $3.000 mensuales y obtener un 5 % de descuento en mis compras</label>
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="password">
+                      </div>
+                      <div class="mb-3">
+                        <label for="password" class="form-label">Repetir Contraseña</label>
+                        <input type="password" class="form-control" id="password">
+                      </div>
+
+
+                </div>
+
+
+                <div class="col-sm-12 col-md-6" id="foto">
+                    <img  width="200px" src="img/Cristiano_Ronaldo_2018.jpg" alt="">
+                    <br>
+					<br>
+                    <input type="file">
+                </div>
+            </div>
+            <div class="row" id="botones">
+                <div class="col text-center">
+                  <br>
+                  <button style="width: 80px; background: rgb(255, 0, 170)" type="submit" class="btn btn-primary">Guardar</button>
+                  <button type="reset" class="btn btn-primary">Limpiar</button>
+                  <br><br>
+                </div>
+            </div>
         </div>
-    </main>
-   
+    </form>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
-        crossorigin="anonymous"></script>
-</body>
-</body>
 
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
 </html>
