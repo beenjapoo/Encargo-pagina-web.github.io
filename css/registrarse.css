@@ -10,138 +10,16 @@ body {
 
 
 
-
-
-
-@media (max-width:800px) {
-
-    .miimg {
-        width: 35%;
-    }
-
-    .head {
-        height: 170px;
-    }
-
-    .lista {
-        display: inline;
-    }
-
-    .lista li {
-        margin: 0;
-        width: 100%;
-        background-color: orange;
-        height: 26%;
-    }
-
-    .imgside {
-        margin-top: 20%;
-    }
-
-    #repPass {
-        height: 20%;
-    }
-
-}
-
-
-.title {
-    margin-bottom: 20px;
-    margin-top: 15px;
-    margin-left: 30px;
+label{
     color: white;
 }
 
-.micontenedor {
-    border: solid black 1px;
-    display: flex;
-    background-color: #245953;
-    color: white;
-
+.user-image{
+    max-width: 100%;
 }
 
-.formregistro {
-    width: 60%;
-    left: 10%;
-}
 
-.divinfo {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-
-.divinfo input {
-    width: 50%;
-    outline: none;
-    border: 1px solid black;
-    padding: 5px;
-}
-
-.divinfo input:hover {
-    transition: all 0.5s;
-    background-color: rgb(215, 215, 215);
-}
-
-.divinfo label {
-    font-size: larger;
-}
-
-.inprut {
+.as{
     width: 30%;
-}
-
-
-
-.datacheckbx {
-    display: flex;
-    justify-content: start;
-    font-size: larger;
-    margin-top: 10px;
-}
-
-.datacheckbx label {
-    margin-right: 10px;
-
-}
-
-.inpCheck {
-    width: 20px;
-}
-
-.imgside {
-    width: 40%;
-    border-left: 1px solid rgba(0, 0, 0, 0.4);
-    margin-left: 5px;
-}
-
-.imgside {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.imgside img {
-    margin-top: 5%;
-    width: 60%;
-}
-
-.imgside button {
-    margin-top: 4%;
-    border: 1px solid rgba(0, 0, 0, 0.4);
-    color: white;
-    padding: 10px;
-    border-radius: 10%;
-    background-color: #19376D;
-}
-
-.imgside button:hover {
-    transition: all 0.5s;
-    background-color: #0B2447;
-}
-
-
-.miimg {
-    height: 90%;
-    margin-left: 3%;
+    margin-right: 40px;
 }
