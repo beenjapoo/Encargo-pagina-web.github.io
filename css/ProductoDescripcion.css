@@ -6,6 +6,7 @@
   
 body {
     font-family: Arial, sans-serif;
+    background-color: rgb(72, 162, 179)
   }
   
 .contenedor {
@@ -17,9 +18,11 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    
   }
   
 .imagen {
+    align-content: left;
     margin-bottom: 20px;
     text-align: center;
   }
@@ -37,7 +40,21 @@ body {
     font-size: 2em;
     margin-bottom: 20px;
   }
-  
+.informacion h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: red;
+  }
+.informacion h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: bisque;
+  }
+  .informacion h4 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: yellow;
+  }
 .informacion p {
     font-size: 1.5em;
     margin-bottom: 10px;
