@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="spa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Datos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/registrarse.css">
+  
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" >
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                 PetShop
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                  <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+                  <a class="nav-link active" aria-current="page" href="ingresar.html">Ingresar</a>
+                  <a class="nav-link active" aria-current="page" href="registrarse.html">Registrarse</a>
+                </div>
+              </div>
+            </div>
+            </nav>
+
+
+    <main class="mt-3">
+        <div class="container" style="background-color: #3C486B;">
+            <section class="misection">
+                <h1 style="color: white;">Mis Datos</h1>
+                <br>
+                <form action="" class="row g-3 needs-validation">
+                    <div class="container-fluid">
+
+                        <div class="row">
+
+                            <div class="col-sm-12 col-md-6">
+
+                                <div class="mb-3 fw-bold">
+                                    <label for="rut" class="form-label">RUT</label>
+                                    <input type="text" class="form-control" id="rut" value="123456789" required>
+                                    <div class="invalid-feedback">El campo rut debe tener informacion</div>
+                                </div>
+
+                                <div class="mb-3 fw-bold">
+                                    <label for="nombres" class="form-label">NOMBRES</label>
+                                    <input type="text" class="form-control" id="nombres" value="juan mario" required>
+                                    <div class="invalid-feedback">El campo nombres debe tener informacion</div>
+                                </div>
+
+                                <div class="mb-3 fw-bold">
+                                    <label for="apellidos" class="form-label">APELLIDOS</label>
+                                    <input type="text" class="form-control" id="apellidos" value="vargas paredes" required>
+                                    <div class="invalid-feedback">El campo apellidos debe tener informacion</div>
+                                </div>
+
+                                <div class="mb-3 fw-bold">
+                                    <label for="email" class="form-label">EMAIL</label>
+                                    <input type="email" class="form-control" id="email" value="juan@duoc.cl" required>
+                                    <div class="invalid-feedback">El campo Email debe tener informacion</div>
+                                </div>
+
+                                <div class="mb-3 fw-bold">
+                                    <label for="direccion" class="form-label">DIRECCIÓN</label>
+                                    <textarea input type="direccion" class="form-control" id="direccion" required>Martinez de rosas 6900</textarea>
+                                    <div class="invalid-feedback">El campo Direccion debe tener informacion</div>
+                                </div>
+
+                                <div class="mb-3 form-check">
+                                    <input class="form-check-input" type="checkbox" id="subscripcion" value="">
+                                    <label class="form-check-label" for="subscripcion">
+                                        SUBSCRIBIRME
+                                    </label>
+                                    <div style="color: white;" id="subscripcionHelp" class="form-text">Deseo subscrbirme con un aporte de $3000 mensuales y obtener un 5% de descuento en mis compras</div>
+                                </div>
+
+                                <div class="mb-3 fw-bold">
+                                    <label for="password" class="form-label">CONTRASEÑA</label>
+                                    <input type="password" class="form-control" id="password" value="awdawdadw" required>
+                                    <div class="invalid-feedback">El campo contraseña debe tener informacion</div>
+                                    
+                                </div>
+
+                                <div class="mb-3 fw-bold">
+                                    <label for="password" class="form-label">CONFIRMAR CONTRASEÑA</label>
+                                    <input type="password" class="form-control" id="password" value="awdawdadw" required>
+                                    <div class="invalid-feedback">El campo confirmar contrasña debe tener informacion</div>
+                                </div>
+
+                                <button class="btn btn-primary as" type="submit">Guardar</button>
+                                <button class="btn btn-primary as" type="reset">Limpiar</button>
+                            </div>
+
+                            
+                            
+                            <div class="col-sm-12 col-md-6">
+                                <table>
+                                    <tr style="margin-bottom: 10px;">
+                                        <td>
+                                            <img class="user-image" src="https://media.discordapp.net/attachments/1090700509209448589/1092276437186265209/imagen_2023-04-02_223558244_1.jpg" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="file" class="form-control">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+</body>
+</body>
+
+</html>
