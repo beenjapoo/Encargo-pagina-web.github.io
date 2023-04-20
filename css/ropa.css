@@ -1,0 +1,18 @@
+
+body{
+    background-color: rgb(72, 162, 179);
+    margin: 0;
+}
+
+.mine{
+    text-align: center;
+}
+
+.precio{
+    font-size: 20;
+    color: white;
+}
+
+span{
+    font-size: 24px;
+}
