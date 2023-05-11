@@ -1,5 +1,3 @@
-
-
 document.addEventListener("DOMContentLoaded",(e)=>{
 
     const url = "../navbar.html"

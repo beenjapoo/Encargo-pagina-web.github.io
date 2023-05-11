@@ -1,6 +1,3 @@
-
-
-
 {/* <div class="col-sm-12 col-md-6 col-lg-4">
                         <img src="img/Pijamaperro.jpg" alt="">
                         <p class="precio"><span>$10.000</span><br>Pijama para perro</p>
