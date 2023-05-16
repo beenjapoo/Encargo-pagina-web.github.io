@@ -1,0 +1,43 @@
+
+/* nuevo */
+a{
+    list-style: none;
+}
+
+a:visited{
+    color: none;
+}
+
+.myFooter{
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: #088395;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.links{
+    height: 50%;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links a{
+    font-size: 40px;
+}
+
+.a1{
+    color: purple;
+}
+
+.a2{
+    color: purple;
+}
+
+.a3{
+    color: green;
+}

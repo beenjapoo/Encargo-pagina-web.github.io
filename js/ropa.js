@@ -1,10 +1,11 @@
-{/* <div class="col-sm-12 col-md-6 col-lg-4">
-                        <img src="img/Pijamaperro.jpg" alt="">
-                        <p class="precio"><span>$10.000</span><br>Pijama para perro</p>
-                    </div> */}
 
 
 
+
+
+
+
+// cambio todo
 
 const addData=(data)=>{
 
@@ -13,18 +14,27 @@ const addData=(data)=>{
         if(ele.category!=="electronics" && ele.category!=="jewelery"){
             
         let div = document.createElement("div");
+        let div2 = document.createElement("div");
         let img = document.createElement("img");
-        let p = document.createElement("p");
+        let h5 = document.createElement("h5")
 
-        div.className="col-sm-12 col-md-6 col-lg-4";
+        div.className="card";
+        div.style.width="18rem"
+        div.style.marginBottom="1%"
+
+        div2.className="card-body"
+        div2.style.backgroundColor="rgba(222,222,222,0.5)"
+
         img.src=ele.image;
-        img.className="imgsize"
+        img.className="card-img-top"
 
-        p.textContent=ele.title;
-        p.className="ps"
+        h5.className="card-title"
+        h5.textContent=ele.title;
+
+        div2.append(h5)
 
         div.append(img)
-        div.append(p)
+        div.append(div2)
         
         document.querySelector(".conte-ropa").append(div);
         }
