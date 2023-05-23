@@ -3,7 +3,7 @@
 // las paginas utilizaran esto (nuevo)
 document.addEventListener("DOMContentLoaded",(e)=>{
 
-    const url = "../../footer.html"
+    const url = "./footer.html"
     const httpx = new XMLHttpRequest();
 
     httpx.onreadystatechange=function(){
