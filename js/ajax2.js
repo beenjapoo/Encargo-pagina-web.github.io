@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded",(e)=>{
 
-    const url = "../navbar2.html"
+    const url = "./navbar2.html"
     const httpx = new XMLHttpRequest();
 
     httpx.onreadystatechange=function(){
