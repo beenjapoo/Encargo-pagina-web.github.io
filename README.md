@@ -1,7 +1,7 @@
 # Encargo-pagina-web
 
 
-Integrantes:
+Integrantes del Grupo:
 - Benjamin Araya Serrano
 - David Luengo
 - Cristian Perez Vega
