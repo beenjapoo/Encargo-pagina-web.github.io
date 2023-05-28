@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(()=>{
     $,validator,addMethod("rutChileno", function(value, element) {
         value = value.replace(/[.-]/g, "");
         if (value.length < 8 || value.length > 9) {
@@ -27,8 +27,12 @@ $(document).ready(function(){
 
         return dv === lastChar;
     }, "Por favor ingrese un RUT válido.");
-    $("#regForm").validate({
+    $("#mantForm").validate({
         rules:{
+            id:{
+                required:true,
+                minlength:1
+            },
             rut:{
                 requirid:true,
                 rutChileno:true
@@ -44,7 +48,6 @@ $(document).ready(function(){
             email:{
                 required:true,
                 email:true
-
             },
             direccion:{
                 required:true,
@@ -60,9 +63,13 @@ $(document).ready(function(){
             },
         },
         messages:{
+            id:{
+                required:"el campo id es obligatorio",
+                minlength:"debe tener un minimo de 1 caracteres"
+            },
             rut:{
                 required:"el campo rut es obligatorio",
-                rutChileno:"debe ser un rut valido"
+                minlength:"debe tener un minimo de 8 caracteres"
             },
             nombres:{
                 required:"el campo nombres es obligatorio",
@@ -79,7 +86,7 @@ $(document).ready(function(){
             direccion:{
                 required:"el campo direccion es obligatorio",
                 minlength:"debe tener un minimo de 3 caracteres"
-            },
+            }, 
             contraseña:{
                 required:"el campo contraseña es obligatorio",
                 minlength:"debe tener un minimo de 5 caracteres"
@@ -89,5 +96,5 @@ $(document).ready(function(){
                 equalTo:"las contraseñas no coinciden"
             },
         },
-    })
-})
+    });
+});

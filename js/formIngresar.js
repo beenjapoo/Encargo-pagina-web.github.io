@@ -1,5 +1,4 @@
 
-
 $(document).ready(()=>{
     
     $("#ingForm").validate({
