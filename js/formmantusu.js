@@ -1,5 +1,5 @@
 $(document).ready(()=>{
-    $,validator,addMethod("rutChileno", function(value, element) {
+    $.validator.addMethod("rutChileno", function(value, element) {
         value = value.replace(/[.-]/g, "");
         if (value.length < 8 || value.length > 9) {
           return false;
@@ -27,7 +27,7 @@ $(document).ready(()=>{
 
         return dv === lastChar;
     }, "Por favor ingrese un RUT válido.");
-    $("#mantForm").validate({
+    $("#usumantForm").validate({
         rules:{
             id:{
                 required:true,
@@ -41,7 +41,7 @@ $(document).ready(()=>{
                 required:true,
                 minlength:3
             },
-            apellidos:{
+            apellido:{
                 required:true,
                 minlength:3
             },
@@ -53,11 +53,11 @@ $(document).ready(()=>{
                 required:true,
                 minlength:3
             },
-            contraseña:{
+            password:{
                 required:true,
                 minlength:5
             },
-            contraseña2:{
+            password2:{
                 required:true,
                 equalTo:"#contraseña"
             },
@@ -75,7 +75,7 @@ $(document).ready(()=>{
                 required:"el campo nombres es obligatorio",
                 minlength:"debe tener un minimo de 3 caracteres"
             },
-            apellidos:{
+            apellido:{
                 required:"el campo apellidos es obligatorio",
                 minlength:"debe tener un minimo de 3 caracteres"
             },
@@ -87,11 +87,11 @@ $(document).ready(()=>{
                 required:"el campo direccion es obligatorio",
                 minlength:"debe tener un minimo de 3 caracteres"
             }, 
-            contraseña:{
+            password:{
                 required:"el campo contraseña es obligatorio",
                 minlength:"debe tener un minimo de 5 caracteres"
             },
-            contraseña2:{
+            password2:{
                 required:"el campo contraseña es obligatorio",
                 equalTo:"las contraseñas no coinciden"
             },

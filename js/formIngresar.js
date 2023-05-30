@@ -1,6 +1,5 @@
-
 $(document).ready(()=>{
-    
+
     $("#ingForm").validate({
 
         rules:{
@@ -16,12 +15,12 @@ $(document).ready(()=>{
         },
         messages:{
             usuario:{
-                required:"el campo usuario es obligatorio",
+                required:"El campo usuario es obligatorio",
                 minlength:"debe tener un minimo de 5 caracteres",
                 email:"debe ser un email valido"
             },
             contrasena:{
-                required:"el campo usuario es obligatorio",
+                required:"El campo contraseña es obligatorio",
                 minlength:"debe tener un minimo de 5 caracteres"
             }
         }
