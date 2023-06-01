@@ -34,7 +34,7 @@ $(document).ready(()=>{
                 minlength:1
             },
             rut:{
-                requirid:true,
+                required:true,
                 rutChileno:true
             },
             nombres:{
@@ -59,41 +59,41 @@ $(document).ready(()=>{
             },
             password2:{
                 required:true,
-                equalTo:"#contraseña"
+                equalTo:"#password"
             },
         },
         messages:{
             id:{
-                required:"el campo id es obligatorio",
-                minlength:"debe tener un minimo de 1 caracteres"
+                required:"El campo id es obligatorio",
+                minlength:"Debe tener un minimo de 1 caracteres"
             },
             rut:{
-                required:"el campo rut es obligatorio",
-                minlength:"debe tener un minimo de 8 caracteres"
+                required:"El campo rut es obligatorio",
+                minlength:"Debe tener un minimo de 8 caracteres"
             },
             nombres:{
-                required:"el campo nombres es obligatorio",
-                minlength:"debe tener un minimo de 3 caracteres"
+                required:"El campo nombres es obligatorio",
+                minlength:"Debe tener un minimo de 3 caracteres"
             },
             apellido:{
-                required:"el campo apellidos es obligatorio",
-                minlength:"debe tener un minimo de 3 caracteres"
+                required:"El campo apellidos es obligatorio",
+                minlength:"Debe tener un minimo de 3 caracteres"
             },
             email:{
-                required:"el campo email es obligatorio",
-                email:"debe ser un email valido"
+                required:"El campo email es obligatorio",
+                email:"Debe ser un email valido"
             },
             direccion:{
-                required:"el campo direccion es obligatorio",
-                minlength:"debe tener un minimo de 3 caracteres"
+                required:"El campo direccion es obligatorio",
+                minlength:"Debe tener un minimo de 3 caracteres"
             }, 
             password:{
-                required:"el campo contraseña es obligatorio",
-                minlength:"debe tener un minimo de 5 caracteres"
+                required:"El campo contraseña es obligatorio",
+                minlength:"Debe tener un minimo de 5 caracteres"
             },
             password2:{
-                required:"el campo contraseña es obligatorio",
-                equalTo:"las contraseñas no coinciden"
+                required:"El campo contraseña es obligatorio",
+                equalTo:"Las contraseñas no coinciden"
             },
         },
     });
